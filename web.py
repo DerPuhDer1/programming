@@ -18,7 +18,7 @@ student_dictionaries = student_generator_v2.get_student_dictionaries()
 
 @app.route('/', methods=['GET'])
 def index():
-    return "<h1> My name is Kent Ernst</h1>"
+    return "<h1> My name is Kent Ernst</h1> <h5> If you can read this, good job</h5>"
 
 #Create route to return all student data
 @app.route('/api/students/all', methods = ['GET'])

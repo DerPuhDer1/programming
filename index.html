@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1> {% block title %} Student Data {% endblock %} </h1>
+    {% for student in student_data %}
+        <div class="post">
+            <h2> {{ student ['first name'] }} {{ student ['last name'] }} </h2>
+            <ul>
+               <li>major: {{ student['major']}}</li> 
+               <li>class: {{ student['class']}}</li>
+               <li>gpa: {{ student['gpa']}}</li>
+               <li>id: {{ student['id']}}</li>
+            </ul>
+        </div>
+    {% endfor %}
+{% endblock %}
